@@ -1,0 +1,13 @@
+This is a web scraping program for Python, that will print out the current Ethereum gas fees in GWEI.
+
+
+
+Webscraping:
+
+Requests is an elegant and simple HTTP library for Python. Requests information & documentation is below.
+https://docs.python-requests.org/en/master/user/install/
+
+Beautiful Soup 4 is a Python library for pulling data out of HTML and XML files. Beautiful Soup information & documentation is below.
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+Enjoy!
