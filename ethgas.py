@@ -2,7 +2,7 @@
 import requests
 import bs4
 
-#Store website in variable
+#Store website
 website = requests.get("https://www.coinmarketcap.com")
 
 #Store website data
