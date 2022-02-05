@@ -1,15 +1,15 @@
-#Import web scraping tools
+# Import web scraping tools
 import requests
 import bs4
 
-#Store website
-website = requests.get("https://www.coinmarketcap.com")
+# Get url data
+url = requests.get("https://www.coinmarketcap.com")
 
-#Store website data
-soup = bs4.BeautifulSoup(website.text,"lxml")
+# Convert to lxml
+soup = bs4.BeautifulSoup(url.text,"lxml")
 
-#Store element data
+# Store element data
 gas_var = soup.select("div>span>a")
 
-#Print current gwei
+# Print current gwei
 print(f'Gas is Currently {gas_var[5].getText()}')
