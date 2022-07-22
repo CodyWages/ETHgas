@@ -9,7 +9,7 @@ url = requests.get("https://www.coinmarketcap.com")
 soup = bs4.BeautifulSoup(url.text,"lxml")
 
 # Store element data
-gas_var = soup.select("div>span>a")
+gas_var = soup.select("div>span>span>a")
 
 # Print current gwei
-print(f'Gas is Currently {gas_var[5].getText()}')
+print(f'Gas is Currently {gas_var[0].getText()}')
